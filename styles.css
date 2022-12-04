@@ -1,0 +1,95 @@
+/* Targeting all content */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Targeting the body element */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #404258;
+    
+}
+
+/* Targeting the clock element */
+.clock {
+    background-color: #6B728E;
+    width: 600px;
+    height: 600px;
+    position: relative;
+    border-radius: 100%;
+    border: 5px solid #474E68;
+    box-shadow: 1px 1px 2px black;
+}
+
+
+/* Targeting the divs inside the .numbers class */
+.numbers div {
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(219, 214, 214);
+    text-shadow: 1px 1px 1px grey;
+}
+
+/* Targeting the numbers (12,3,6,9) Individually */
+
+.twelve {
+    top: 5px;
+    left: 47%;
+    transform: translateY(80%);
+}
+
+.three {
+    right: 1em;
+    top: 47%;
+}
+
+.six {
+   bottom: 5px;
+   left: 48%;
+   transform: translateY(-80%); 
+}
+
+.nine {
+    left: 1em;
+    top: 47%;
+}
+
+/* Targeting the arrows for the clock */
+
+.clock .arrows {
+    width: 100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.arrows::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: #404258;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    z-index: 3;
+  }
+
+
+.arrows .hour {
+    height: 80px;
+    transform: rotate(30deg);
+}
+
+.arrows .second {
+    background-color: goldenrod;
+    transform: rotate(250deg);
+}
+  
